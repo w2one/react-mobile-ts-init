@@ -1,0 +1,17 @@
+.nav {
+  background-color: #5f88d4;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+
+  .left {
+    position: absolute;
+    width: 1rem;
+    left: 0;
+  }
+
+  .title {
+    font-size: 0.35rem;
+    color: #fff;
+  }
+}

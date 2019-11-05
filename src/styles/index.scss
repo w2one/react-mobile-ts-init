@@ -1,0 +1,63 @@
+@import "_reset";
+@import "_variable";
+
+// import font
+// $font-face {
+//   font-family: my-font;
+//   src: url("../static/font/webfont.woff");
+// }
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-size: 0.3rem;
+}
+
+body {
+  background-color: #fff;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 7.5rem;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 130px 0 #5c99e7;
+
+  // > div {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex: 1;
+  // }
+}
+
+body {
+  background: $body_bg_color;
+  color: $label_color;
+  font-family: $font-family-base;
+  font-size: $font-size-base !important;
+  overflow-wrap: break-word;
+}
+
+$iconWidth: 0.25rem;
+$color: #fff;
+
+@mixin arrow {
+  width: $iconWidth;
+  height: $iconWidth;
+  display: inline-block;
+  border-left: 1px solid $color;
+  border-top: 1px solid $color;
+}
+
+.arrow-left {
+  transform: rotate(-45deg);
+  @include arrow;
+}
+
+.arrow-right {
+  transform: rotate(135deg);
+  @include arrow;
+}

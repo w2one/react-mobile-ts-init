@@ -1,0 +1,29 @@
+.button {
+  // padding: 12px;
+  background-color: #d31145;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #d31145;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 0.3rem 0;
+
+  &:active {
+    background-color: #d311457c;
+    border: 1px solid #d311457c;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.25);
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+    text-shadow: none;
+  }
+}
+
+.ant-btn.disabled,
+.ant-btn[disabled] {
+  cursor: not-allowed;
+}

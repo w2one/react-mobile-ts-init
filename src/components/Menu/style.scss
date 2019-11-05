@@ -1,0 +1,14 @@
+.menu {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #eee;
+  > a {
+    flex: 1;
+    text-align: center;
+    line-height: 0.8rem;
+  }
+
+  :global(.active) {
+    color: red;
+  }
+}
